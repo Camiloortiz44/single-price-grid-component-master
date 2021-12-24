@@ -5,7 +5,76 @@
     --grayish-blue: hsl(218, 22%, 67%);
 }
 
-.container {
-    width: 90%;
-    margin: 1em auto;
+h2 {
+    color: var(--light-gray)
 }
+
+p {
+    color: white;
+    font-size: 16px;
+}
+
+h6 {
+    color: pink;
+}
+h6 span {
+    font-size: 20px;
+    color: var(--light-gray);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: 'Karla', sans-serif;
+    width: 50%; 
+}
+
+.card {
+    padding: 18px 30px;
+}
+.cards {
+    display: flex;
+}
+
+.card-community {
+    background-color: var(--light-gray);
+}
+
+.card-sub {
+    background-color: var(--cyan);
+    width: 50%;
+}
+
+.card-why {
+    background-color: var(--grayish-blue);
+    width: 50%;
+}
+
+.button {
+    border: none;
+    background-color: var(--bright-yellow);
+    padding: 12px 90px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+
+.paragraph-community {
+    color: var(--cyan);
+    font-size: 17px;
+}
+
+.paragraph-why {
+    font-size: 12px;
+}
+
+.title-community {
+    color: var(--cyan);
+}
+
+.title-community-h3 {
+    color: var(--bright-yellow)
+}
+
