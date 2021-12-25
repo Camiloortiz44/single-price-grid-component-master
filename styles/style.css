@@ -5,7 +5,11 @@
     --grayish-blue: hsl(218, 22%, 67%);
 }
 
-h2 {
+body {
+    background-color: var(--light-gray);
+}
+
+h3 {
     color: var(--light-gray)
 }
 
@@ -17,8 +21,9 @@ p {
 h6 {
     color: pink;
 }
+
 h6 span {
-    font-size: 20px;
+    font-size: 30px;
     color: var(--light-gray);
 }
 
@@ -38,36 +43,55 @@ h6 span {
 }
 
 .card-community {
-    background-color: var(--light-gray);
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .card-sub {
     background-color: var(--cyan);
+    border-radius: 0px 0px 0px 5px;
     width: 50%;
 }
 
 .card-why {
     background-color: var(--grayish-blue);
+    border-radius: 0px 0px 5px 0px;
     width: 50%;
 }
 
 .button {
     border: none;
     background-color: var(--bright-yellow);
-    padding: 12px 90px;
-    border-radius: 4px;
     color: white;
+    border-radius: 4px;
+    padding: 12px 95px;
     text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-
+.list {
+    list-style: none;
+    color: var(--light-gray);
+    font-size: 14px;
+    text-align: left;
+}
 .paragraph-community {
     color: var(--cyan);
     font-size: 17px;
 }
 
+.paragraph-sub {
+    margin-top: 10px;
+}
+
 .paragraph-why {
     font-size: 12px;
+}
+
+.section-sub {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .title-community {
@@ -77,4 +101,3 @@ h6 span {
 .title-community-h3 {
     color: var(--bright-yellow)
 }
-
