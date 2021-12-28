@@ -9,15 +9,17 @@ body {
     background-color: var(--light-gray);
 }
 
+@media (max-width: 768){
+    body {
+        overflow: scroll;
+        height: 1440px;
+    }
+}
+
 h3 {
     color: var(--light-gray)
 }
 
-p {
-    color: white;
-    font-size: 16px;
-    line-height: 1.7;
-}
 
 h5 {
     color: pink;
@@ -28,13 +30,50 @@ h5 span {
     font-size: 30px;
 }
 
+p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+.button {
+    background-color: var(--bright-yellow);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 14px 95px;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 768){
+    .button {
+        width: 100%;
+    }
+}
 
 .card {
     padding: 18px 42px;
 }
+
 .cards {
     display: flex;
+    flex-direction: row;
     height: 250px;
+}
+
+@media (max-width: 768){
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: 768;
+    }
 }
 
 .card-community {
@@ -48,49 +87,58 @@ h5 span {
     width: 50%;
 }
 
+@media (max-width: 768){
+    .card-sub {
+        border-radius: 0px;
+        
+    }
+}
+
 .card-why {
     background-color: hsl(179, 71%, 46%);
     border-radius: 0px 0px 7px 0px;
     width: 50%;
 }
 
-.button {
-    background-color: var(--bright-yellow);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    margin-top: 10px;
-    padding: 14px 95px;
-    text-align: center;
+@media (max-width: 768){
+    .card-why {
+        border-radius: 0px 7px;
+    }
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
     font-family: 'Karla', sans-serif;
-    margin: 4em 29%;
+    margin: 4em auto;
     overflow: hidden;
     width: 50%; 
+}
+
+@media (max-width: 768){
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 65%;
+    }
 }
 
 .paragraph-community {
     color: var(--cyan);
     font-size: 17px;
-}
-
-.paragraph-sub {
     margin-top: 10px;
 }
 
+.paragraph-sub {
+    margin-top: 7px;
+}
+
 .paragraph-why {
-    color: wheat;
+    color: rgb(243, 240, 232);
     font-size: 15px;
-    line-height: 1.4;
+    line-height: 1.38;
 }
 
 .section-sub {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     margin-top: 10px;
 }
 
@@ -101,4 +149,9 @@ h5 span {
 .title-community-h3 {
     color: var(--bright-yellow);
     margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.title-sub {
+    margin-bottom: 20px;
 }
